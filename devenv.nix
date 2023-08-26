@@ -5,5 +5,6 @@
     gawk
     go
     gcc
+    python3
   ];
 }
