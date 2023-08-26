@@ -6,5 +6,6 @@
     go
     gcc
     python3
+    rustc
   ];
 }
