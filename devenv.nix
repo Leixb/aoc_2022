@@ -4,5 +4,6 @@
   packages = with pkgs; [
     gawk
     go
+    gcc
   ];
 }
