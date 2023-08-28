@@ -1,14 +1,5 @@
 #!/usr/bin/env -S awk -f
 
-BEGIN {
-    CURRENT = 0
-    RECORD = 0
-}
-
-END {
-    print RECORD
-}
-
 /^$/ {
     if (CURRENT > RECORD) {
         RECORD = CURRENT
@@ -16,6 +7,6 @@ END {
     CURRENT = 0
 }
 
-{
-    CURRENT += $1
-}
+{ CURRENT += $1 }
+
+END { print RECORD }
