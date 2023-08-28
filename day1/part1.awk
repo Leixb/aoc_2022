@@ -1,4 +1,4 @@
-#!/usr/bin/env awk
+#!/usr/bin/env -S awk -f
 
 BEGIN {
     CURRENT = 0
